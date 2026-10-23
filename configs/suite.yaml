@@ -1,0 +1,20 @@
+# 5 models x 3 training mixes x 5 seeds = 75 training runs, each scored on real and synthetic test sets.
+name: synth-vs-real
+datasets:
+  real: {manifest: ../data/real/manifest.parquet}
+  synthetic: {manifest: ../data/synthetic/manifest.parquet}
+train:
+  - {name: real, sources: {real: 1.0}, size: 10000}
+  - {name: synthetic, sources: {synthetic: 1.0}, size: 10000}
+  - {name: synthetic_plus_10pct_real, sources: {synthetic: 0.9, real: 0.1}, size: 10000}
+test: [real, synthetic]
+models:
+  - {name: logreg, params: {C: 0.1}}
+  - {name: linear_svm, params: {C: 0.05}}
+  - {name: random_forest, params: {n_estimators: 200}}
+  - {name: knn, params: {n_neighbors: 5}}
+  - {name: mlp, params: {hidden: [256], max_iter: 60}}
+seeds: [0, 1, 2, 3, 4]
+metrics: [accuracy, macro_f1]
+max_runs: 100
+max_attempts: 3

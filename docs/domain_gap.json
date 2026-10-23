@@ -1,0 +1,142 @@
+{
+  "samples_per_domain": 5000,
+  "visual": {
+    "mean_intensity": {
+      "real_mean": 0.13016158637069167,
+      "synthetic_mean": 0.15330870245993136,
+      "std_mean_diff": 0.49703680139389395,
+      "ks": 0.1846,
+      "wasserstein": 0.023147116089239715
+    },
+    "contrast_std": {
+      "real_mean": 0.30074797259271147,
+      "synthetic_mean": 0.28762984494268895,
+      "std_mean_diff": -0.244856186182243,
+      "ks": 0.13920000000000002,
+      "wasserstein": 0.013727620393037796
+    },
+    "ink_fraction": {
+      "real_mean": 0.13179464285714285,
+      "synthetic_mean": 0.14684438775510206,
+      "std_mean_diff": 0.31079840452499646,
+      "ks": 0.137,
+      "wasserstein": 0.015049744897959183
+    },
+    "edge_density": {
+      "real_mean": 0.23513214285714285,
+      "synthetic_mean": 0.23034387755102043,
+      "std_mean_diff": -0.10001247152414404,
+      "ks": 0.09120000000000006,
+      "wasserstein": 0.010696428571428572
+    },
+    "background_noise": {
+      "real_mean": 0.007545743419253267,
+      "synthetic_mean": 0.01771275133267045,
+      "std_mean_diff": 4.274140334652196,
+      "ks": 0.9924000000000001,
+      "wasserstein": 0.010167007913417183
+    },
+    "mass_offset_px": {
+      "real_mean": 0.7695838941117407,
+      "synthetic_mean": 0.6634387851380974,
+      "std_mean_diff": -0.2650666026141141,
+      "ks": 0.28740000000000004,
+      "wasserstein": 0.23286269206305493
+    },
+    "bbox_height": {
+      "real_mean": 19.6032,
+      "synthetic_mean": 16.8896,
+      "std_mean_diff": -1.801642858382048,
+      "ks": 0.829,
+      "wasserstein": 2.7604
+    },
+    "bbox_width": {
+      "real_mean": 14.7408,
+      "synthetic_mean": 12.7024,
+      "std_mean_diff": -0.6343318531043242,
+      "ks": 0.38339999999999996,
+      "wasserstein": 2.5588
+    }
+  },
+  "features": {
+    "frechet_distance": 21.389791408673837,
+    "frechet_real_vs_real": 0.31085504782866696,
+    "c2st_auc": 0.9924638
+  },
+  "metadata": {
+    "modes": {
+      "real": [
+        "L"
+      ],
+      "synthetic": [
+        "L"
+      ]
+    },
+    "sizes": {
+      "real": [
+        "28x28"
+      ],
+      "synthetic": [
+        "28x28"
+      ]
+    },
+    "text_keys": {
+      "real": [],
+      "synthetic": [
+        "font_size",
+        "generator",
+        "rotation",
+        "seed",
+        "shear",
+        "stroke"
+      ]
+    },
+    "median_file_bytes": {
+      "real": 273.5,
+      "synthetic": 784.0
+    }
+  },
+  "labels": {
+    "real_share": [
+      0.0928,
+      0.1126,
+      0.0924,
+      0.1038,
+      0.0998,
+      0.0972,
+      0.0966,
+      0.11,
+      0.0984,
+      0.0964
+    ],
+    "synthetic_share": [
+      0.1092,
+      0.0528,
+      0.1042,
+      0.1064,
+      0.1078,
+      0.0996,
+      0.1114,
+      0.0616,
+      0.1474,
+      0.0996
+    ],
+    "chi2": 242.77351391741442,
+    "p_value": 3.3416071481354316e-47,
+    "js_divergence_bits": 0.017784054023632284,
+    "largest_differences": [
+      [
+        1,
+        0.47
+      ],
+      [
+        7,
+        0.56
+      ],
+      [
+        8,
+        1.5
+      ]
+    ]
+  }
+}

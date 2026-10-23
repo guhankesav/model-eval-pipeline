@@ -1,0 +1,142 @@
+{
+  "samples_per_domain": 5000,
+  "visual": {
+    "mean_intensity": {
+      "real_mean": 0.13016158637069167,
+      "synthetic_mean": 0.17448474195152522,
+      "std_mean_diff": 0.886125992858744,
+      "ks": 0.33100000000000007,
+      "wasserstein": 0.04432315558083355
+    },
+    "contrast_std": {
+      "real_mean": 0.30074797259271147,
+      "synthetic_mean": 0.30255069951117036,
+      "std_mean_diff": 0.03320541982605303,
+      "ks": 0.11820000000000008,
+      "wasserstein": 0.013317307454347612
+    },
+    "ink_fraction": {
+      "real_mean": 0.13179464285714285,
+      "synthetic_mean": 0.1733875,
+      "std_mean_diff": 0.8003117748587396,
+      "ks": 0.31700000000000006,
+      "wasserstein": 0.04159285714285714
+    },
+    "edge_density": {
+      "real_mean": 0.23513214285714285,
+      "synthetic_mean": 0.26549464285714286,
+      "std_mean_diff": 0.6195512002483141,
+      "ks": 0.2508,
+      "wasserstein": 0.030366581632653065
+    },
+    "background_noise": {
+      "real_mean": 0.007545743419253267,
+      "synthetic_mean": 0.015773417530115692,
+      "std_mean_diff": 3.008033710369954,
+      "ks": 0.9056000000000001,
+      "wasserstein": 0.008227674110862428
+    },
+    "mass_offset_px": {
+      "real_mean": 0.7695838941117407,
+      "synthetic_mean": 0.0058977586370741976,
+      "std_mean_diff": -3.7259560483384493,
+      "ks": 0.9984000000000001,
+      "wasserstein": 0.7636861354746665
+    },
+    "bbox_height": {
+      "real_mean": 19.6032,
+      "synthetic_mean": 18.8608,
+      "std_mean_diff": -0.6042793089954255,
+      "ks": 0.4964,
+      "wasserstein": 1.0392000000000001
+    },
+    "bbox_width": {
+      "real_mean": 14.7408,
+      "synthetic_mean": 13.8148,
+      "std_mean_diff": -0.28611255209390346,
+      "ks": 0.2702,
+      "wasserstein": 1.8344000000000003
+    }
+  },
+  "features": {
+    "frechet_distance": 22.472994907423512,
+    "frechet_real_vs_real": 0.3148112325331792,
+    "c2st_auc": 0.97499
+  },
+  "metadata": {
+    "modes": {
+      "real": [
+        "L"
+      ],
+      "synthetic": [
+        "L"
+      ]
+    },
+    "sizes": {
+      "real": [
+        "28x28"
+      ],
+      "synthetic": [
+        "28x28"
+      ]
+    },
+    "text_keys": {
+      "real": [],
+      "synthetic": [
+        "font_size",
+        "generator",
+        "rotation",
+        "seed",
+        "shear",
+        "stroke"
+      ]
+    },
+    "median_file_bytes": {
+      "real": 273.5,
+      "synthetic": 701.0
+    }
+  },
+  "labels": {
+    "real_share": [
+      0.0928,
+      0.1126,
+      0.0924,
+      0.1038,
+      0.0998,
+      0.0972,
+      0.0966,
+      0.11,
+      0.0984,
+      0.0964
+    ],
+    "synthetic_share": [
+      0.105,
+      0.0932,
+      0.0976,
+      0.1006,
+      0.1056,
+      0.0962,
+      0.1048,
+      0.0982,
+      0.1012,
+      0.0976
+    ],
+    "chi2": 19.959747598043624,
+    "p_value": 0.018162448005209254,
+    "js_divergence_bits": 0.0014411222209648738,
+    "largest_differences": [
+      [
+        1,
+        0.83
+      ],
+      [
+        0,
+        1.13
+      ],
+      [
+        7,
+        0.89
+      ]
+    ]
+  }
+}

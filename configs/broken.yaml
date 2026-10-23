@@ -1,0 +1,17 @@
+# Deliberately wrong: each line below should be caught by `evalpipe validate` before any training starts.
+name: broken-suite
+datasets:
+  real: {manifest: ../data/real/manifest.parquet, fingerprint: "0000000000000000"}
+  synthetic: {manifest: ../data/synthetic/manifest.parquet}
+train:
+  - {name: synthetic, sources: {synthetic: 0.7, real: 0.2}, size: 10000}
+  - {name: huge, sources: {real: 1.0}, size: 900000}
+test: [real, imagenet]
+models:
+  - {name: logreg, params: {C: -1}}
+  - {name: linear_svm, params: {C: 0.05}}
+  - {name: random_forest, params: {n_estimator: 200}}
+  - {name: xgboost}
+seeds: [0, 0]
+metrics: [accuracy, ece]
+max_runs: 4
